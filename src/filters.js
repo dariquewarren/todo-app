@@ -2,23 +2,21 @@
 let filters = {
     searchText: '',
     hideCompleted: false
-    } // correct 
-// getFilters
-// Arguments: none
-// Return value: filters object
+    } 
 const getFilters =() =>{
     return filters
-} // correct
+} 
+// destructure updates object: change code accordingly
 
 
-// setFilters
-// Arguments: updates object with optional searchText or hideCompleted
-// Return value: none
+
 const setFilters =(updates)=>{
-    if (typeof updates.searchText === 'string') {
-        filters.searchText = updates.searchText
-    } if (typeof updates.hideCompleted === 'boolean') {
-        filters.hideCompleted = updates.hideCompleted
+    const{ searchText, hideCompleted } = updates
+
+    if (typeof searchText === 'string') {
+        filters.searchText = searchText
+    } if (typeof hideCompleted === 'boolean') {
+        filters.hideCompleted = hideCompleted
     }
 }
 // Make sure to set up the exports
