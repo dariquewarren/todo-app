@@ -10,8 +10,8 @@ const getFilters =() =>{
 
 
 
-const setFilters =(updates)=>{
-    const{ searchText, hideCompleted } = updates
+const setFilters = ({ searchText, hideCompleted }) => {
+    
 
     if (typeof searchText === 'string') {
         filters.searchText = searchText

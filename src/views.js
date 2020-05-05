@@ -1,16 +1,11 @@
 import { getFilters, setFilters } from './filters'
 import { getTodos, toggleTodo, removeTodo } from './todos'
-// destructure object that comes back from getFilters()
-
-
-
-
+// destructure object that comes back
 const renderTodos = () => {
     const todoEl = document.querySelector('#todos') 
-   const filters = getFilters()
-        const {searchText, hideCompleted} = filters
-   
-   const filteredTodos = getTodos().filter((todo) => {
+   const {searchText, hideCompleted}= getFilters()
+    
+    const filteredTodos = getTodos().filter((todo) => {
         const searchTextMatch = todo.text.toLowerCase().includes(searchText.toLowerCase())
         const hideCompletedMatch = !hideCompleted || !todo.completed
         
@@ -27,9 +22,9 @@ const renderTodos = () => {
         })
     } else {
         const messageEl = document.createElement('p')
-            messageEl.classList.add('empty-message')
-            messageEl.textContent = 'There are no to-dos to show'
-                todoEl.appendChild(messageEl)
+        messageEl.classList.add('empty-message')
+        messageEl.textContent = 'There are no to-dos to show'
+        todoEl.appendChild(messageEl)
     }
 }
 // generateTodoDOM
