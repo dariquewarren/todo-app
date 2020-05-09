@@ -1,3 +1,4 @@
+const { uuid } = require('uuidv4')
 import { getFilters, setFilters } from './filters'
 import { getTodos, toggleTodo, removeTodo } from './todos'
 // destructure object that comes back
@@ -38,7 +39,7 @@ const generateTodoDOM = (todo) => {
     const checkbox =document.createElement('input') 
     const todoText = document.createElement('span')
     const removeButton = document.createElement('button')
-
+   const id = todo.id
 
     //checkbox if data shows todo is completed
     
@@ -46,7 +47,8 @@ const generateTodoDOM = (todo) => {
     checkbox.setAttribute('type', 'checkbox')
     checkbox.checked = todo.completed
     containerEl.appendChild(checkbox)
-    checkbox.addEventListener('change', (e) =>{
+    checkbox.addEventListener('click', (e) =>{
+    
 toggleTodo(id)
 
 renderTodos()

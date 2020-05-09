@@ -1,6 +1,6 @@
 // Set up index.html to load the bundle
 // Make sure to load uuid via an npm module when necessary
-import uuidv4 from 'uuid/v4'
+const { uuid } = require('uuidv4')
 import { renderTodos, generateTodoDOM, generateSummaryDOM } from './views'
 import { saveTodos, getTodos, createTodo, removeTodo, toggleTodo, loadTodos } from './todos'
 import { getFilters, setFilters } from './filters'

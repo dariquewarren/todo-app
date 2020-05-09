@@ -1,3 +1,4 @@
+const { uuid } = require('uuidv4')
 // Setup the empty todos array
 let todos = []
 // loadTodos
@@ -29,7 +30,7 @@ const getTodos = () => {
 // Return value: none
 const createTodo =  (text) => {
    todos.push({
-       id: uuidv4,
+       id: uuid(),
        text,
        completed: false
    })
@@ -54,10 +55,9 @@ const toggleTodo = (id) => {
       todo.completed = !todo.completed  
       saveTodos()
     }
-    
+    console.log('YOU FIXED YOUR FIRST REAL BUG!')
 }
 // Make sure to call loadTodos and setup the exports
 loadTodos()
 
 export {getTodos, saveTodos,  createTodo, removeTodo, toggleTodo, loadTodos }
-import uuidv4 from 'uuid/v4'
