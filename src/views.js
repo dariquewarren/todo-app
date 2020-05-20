@@ -39,7 +39,7 @@ const generateTodoDOM = (todo) => {
     const checkbox =document.createElement('input') 
     const todoText = document.createElement('span')
     const removeButton = document.createElement('button')
-   const id = todo.id
+   
 
     //checkbox if data shows todo is completed
     
