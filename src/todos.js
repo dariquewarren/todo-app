@@ -1,4 +1,5 @@
-const { uuid } = require('uuidv4')
+
+var { uuid } = require('uuidv4')
 // Setup the empty todos array
 let todos = []
 // loadTodos
@@ -39,7 +40,7 @@ const createTodo =  (text) => {
 // removeTodo
 // Arguments: id of todo to remove
 // Return value: none
-const removeTodo = (id) => {
+const removeTodo = () => {
     const todoIndex = todos.findIndex((todo) => todo.id === id)
     if (todoIndex >= -1) {
         todos.splice(todoIndex, 1)
