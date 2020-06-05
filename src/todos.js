@@ -40,7 +40,7 @@ const createTodo =  (text) => {
 // removeTodo
 // Arguments: id of todo to remove
 // Return value: none
-const removeTodo = () => {
+const removeTodo = (id) => {
     const todoIndex = todos.findIndex((todo) => todo.id === id)
     if (todoIndex >= -1) {
         todos.splice(todoIndex, 1)

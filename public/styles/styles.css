@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background: #2B292E;
+    background: rgb(53, 4, 4);
   color: #fafafa;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -54,18 +54,20 @@ a {
 /* Header */
 
 .header {
-  background: #6F439C;
-  color:white;
+  background:rgb(139, 22, 1);
+  font-family: fantasy;
+  
   padding: 1.6rem 0;
 }
 
 .header__title {
+    color: rgb(41, 13, 8);
   font-size: 3.2rem;
   margin-bottom: .4rem;
 }
 
 .header__subtitle {
-  /* color: #777; */
+  color: rgb(10, 5, 5);
   font-size: 1.6rem;
   font-weight: 300;
 }
@@ -73,7 +75,8 @@ a {
 /* Actions Bar */
 
 .actions {
-    background-color: #353239;
+    background: rgb(53, 4, 4);
+    color: #fafafa;
     /* border-bottom: 1px solid #dedfe0; */
     /* color: #333333; */
     padding: 1rem
@@ -113,10 +116,11 @@ a {
 }
 
 .button {
-    background: #7044a0;
+    background: rgb(53, 4, 4);
+    color: #fafafa;
     border: none;
     border-bottom: 2px solid #603a88;
-    color: white;
+    
     font-size: 1.4rem;
     font-weight: 300;
     padding: .8rem;
@@ -186,7 +190,7 @@ a {
 
 .list-item {
     text-decoration: none;
-    color: #fafafa;
+    color: #d14d4dfd;
     cursor: pointer;
     background: #353239;
     border: 1px solid #423e47;
