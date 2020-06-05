@@ -122,6 +122,16 @@ a {
     padding: .8rem;
     transition: background .3s ease, color .3s ease;
 }
+.special {
+    background: grey;
+    border: none;
+    border-bottom: 2px solid #603a88;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+}
 
 .button:hover {
     background: #5F3A87;
