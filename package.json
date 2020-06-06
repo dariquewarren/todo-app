@@ -15,8 +15,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "live-server": "^1.2.0",
-    "uuid": "^3.2.1",
-    "uuidv4": "^6.0.8",
+    "uuidv4": "^6.1.0",
     "webpack": "^4.43.0",
     "webpack-dev-server": "^3.10.3"
   },

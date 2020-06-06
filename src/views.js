@@ -1,4 +1,4 @@
-const { uuid } = require('uuidv4')
+
 import { getFilters, setFilters } from './filters'
 import { getTodos, toggleTodo, removeTodo } from './todos'
 // destructure object that comes back
@@ -49,7 +49,7 @@ const generateTodoDOM = (todo) => {
     containerEl.appendChild(checkbox)
     checkbox.addEventListener('click', (e) =>{
     
-toggleTodo(id)
+toggleTodo(todo.id)
 
 renderTodos()
 })
