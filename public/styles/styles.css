@@ -55,7 +55,7 @@ a {
 
 .header {
   background:rgb(139, 22, 1);
-  font-family: fantasy;
+  font-family: 'Courier New', Courier, monospace;
   
   padding: 1.6rem 0;
 }
@@ -118,8 +118,9 @@ a {
 .button {
     background: rgb(53, 4, 4);
     color: #fafafa;
-    border: none;
+    
     border-bottom: 2px solid #ff0000;
+    border-right: #ff0000;
     
     font-size: 1.4rem;
     font-weight: 300;
@@ -138,7 +139,7 @@ a {
 }
 
 .button:hover {
-    background:  #4a883a;
+    background:  #4d0811;
 }
 
 .button--secondary {
